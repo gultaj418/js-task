@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+      <header>
+          <div class="header">
+            <h2>Task progress Dashboard</h2>
+          </div>
+          
+      </header>
+    <div class="left-side-bar">
+
+        <h2>Finished Tasks</h2>
+        <ul>
+            
+           
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                    <span class="item">People</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                    <span class="item">Perfomance</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span class="item">Development</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item">Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-user-shield"></i></span>
+                    <span class="item">Admin</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+ <div class="container">
+     <div class="nav-input">
+         <div class="search-input">
+            <input class="search-bar" type="text" placeholder="Search the task" >
+            
+            <span id="search"  aria-hidden="true" data-icon="&#xe906;" class="down-arrow"></span>
+         </div>
+       
+        
+        
+
+        <button id="open1" class="create-task"  ><span id="task" aria-hidden="true" data-icon="&#xe90b;" class="down-arrow"></span></button>
+        <div class="hide">Create task</div>
+     </div>
+
+
+     <div id="modal-container">
+        
+         <div class="form-container">
+            <form id="modal" >
+                <br><br>
+                
+                <label id="label-tname" for="tname">Task name:</label><br>
+                <input type="text" id="tname" name="tname" required ><br><br>
+                <label id="label-desc" for="desc">Task description:</label><br>
+                <!-- <input type="text" id="desc" name="desc" ><br><br> -->
+                <textarea id="desc" name="desc" rows="4" cols="50" placeholder="description" required></textarea> <br><br>
+                <label id="label-deadline" for="deadline">Deadline:</label><br>
+                <!-- <input type="text" id="deadline" name="deadline" ><br><br> -->
+                <input type="date" id="deadline" name="deadline" value="2021-10-22" min="2021-01-01" max="2021-12-31" required><br><br>
+                
+                <label for="duty">The person in charge:</label><br><br>
+            
+                <input type="checkbox" id="employee1" name="employee1" >
+                <label for="employee1"> Gultaj</label>
+                <input type="checkbox" id="employee2" name="employee2">
+                <label for="employee2">Azad</label>
+                <input type="checkbox" id="employee3" name="employee3">
+                <label for="employee3"> Shirin</label><br><br>
+                <!-- <input id="submit" type="submit" value="Submit"> -->
+                <!-- <button id="submit" onclick="submitForm()">submit</button> -->
+                <!-- <button id="submit" >submit</button> -->
+                <button id="cancel">cancel</button>
+                <p id="submit">submit</p>
+              </form>
+         </div>
+         
+ 
+  
+         
+     </div>
+
+
+     <div id="task-accordion">
+       <div class="task-list">
+             <div class="task-heading">
+                <h3>Responsive web page <img class="plus-minus"  id="plus-minus" src="./images/Union 3.svg" alt=""></h3> 
+             </div>
+
+             
+            <div class="task-info">
+                <p> <b>Deadline:</b> 24.10.2021</p>
+                <p> <b>The person/people in charge:</b></p>
+                <p> <b>Description for the task: </b> loem ipsum dothbsgvd udsfufvs hbdcdbhufjfifi fiuh ifne isrhe dfhhuee iuerer iudhiuf 
+                   d hdfyusdgf ushfugs hfuy</p>
+                
+            </div>
+            
+       </div>
+       <div class="task-list">
+            <div class="task-heading">
+               <h3>Responsive web page <img class="plus-minus"  id="plus-minus" src="./images/Union 3.svg" alt=""></h3> 
+            </div>
+
+            
+           <div class="task-info">
+               <p> <b>Deadline:</b> 24.10.2021</p>
+               <p> <b>The person/people in charge:</b></p>
+               <p> <b>Description for the task: </b> loem ipsum dothbsgvd udsfufvs hbdcdbhufjfifi fiuh ifne isrhe dfhhuee iuerer iudhiuf 
+                  d hdfyusdgf ushfugs hfuy</p>
+               
+           </div>
+           
+       </div>
+       <div class="task-list">
+        <div class="task-heading">
+           <h3>Responsive web page <img class="plus-minus"  id="plus-minus" src="./images/Union 3.svg" alt=""></h3> 
+        </div>
+
+        
+       <div class="task-info">
+           <p> <b>Deadline:</b> 24.10.2021</p>
+           <p> <b>The person/people in charge:</b></p>
+           <p> <b>Description for the task: </b> loem ipsum dothbsgvd udsfufvs hbdcdbhufjfifi fiuh ifne isrhe dfhhuee iuerer iudhiuf 
+              d hdfyusdgf ushfugs hfuy</p>
+           
+       </div>
+       
+       </div>
+       <div class="task-list">
+    <div class="task-heading">
+       <h3>Responsive web page <img class="plus-minus"  id="plus-minus" src="./images/Union 3.svg" alt=""></h3> 
+    </div>
+
+    
+   <div class="task-info">
+       <p> <b>Deadline:</b> 24.10.2021</p>
+       <p> <b>The person/people in charge:</b></p>
+       <p> <b>Description for the task: </b> loem ipsum dothbsgvd udsfufvs hbdcdbhufjfifi fiuh ifne isrhe dfhhuee iuerer iudhiuf 
+          d hdfyusdgf ushfugs hfuy</p>
+       
+   </div>
+   
+       </div>
+    </div>
+
+   
+   
+   
+</div>
+    <div class="right-side-bar">
+        
+    </div>
+   
+   
+   
+   
+   
+   <script>
+
+
+//---------------------------------------open and close modal-----------------------------------------------------------------------------------
+
+        const open1= document.getElementById('open1');
+        const modal_container=document.getElementById('modal');
+        const  cancel= document.getElementById('cancel');
+
+
+      open1.addEventListener('click',()=>{
+            modal_container.classList.add('show')
+
+        
+        });
+
+      cancel.addEventListener('click',()=>{
+         modal_container.classList.remove('show')
+        
+     });
+
+    //   function submitForm() {
+    //  document.getElementById("submit").submit();
+    //  }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//-------------------------------------------------dropdown accordion---------------------------------------------------------------------------------
+
+const taskHeadings=document.querySelectorAll("#plus-minus");
+
+taskHeadings.forEach(taskHeading=>{
+    taskHeading.addEventListener('click', event=>{
+        taskHeading.classList.toggle('x-rotate');
+        const taskInfo=event.target.parentNode.parentNode.nextElementSibling;
+        const taskHeader=event.target.parentNode.parentNode;
+        if(taskHeading.classList.contains('x-rotate')){
+           
+            taskInfo.style.display='block';
+            taskHeader.style.borderBottomLeftRadius='0px';
+            taskHeader.style.borderBottomRightRadius='0px';
+
+        }
+        else{
+            taskInfo.style.display='none';
+            taskHeader.style.borderBottomLeftRadius='10px';
+            taskHeader.style.borderBottomRightRadius='10px';
+            
+        }
+    });
+});
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+//-------------------------------------------------submit add div class-------------------------------------------------------------------------------
+const submitBtn=document.getElementById('submit');
+// const sbm = document.querySelector('#submit');
+const  accrdContainer=document.getElementById('task-accordion')
+console.log(submitBtn)
+// console.log(sbm)
+
+
+
+function AddNew() {
+  const newDiv = document.createElement("div");
+  const newHeadDiv=document.createElement("div");
+  const newDescDiv=document.createElement("div");
+
+  const nameTask=document.createElement("h3");
+  const descTask=document.createElement("p");
+  const dateTask=document.createElement("p");
+  const peopleTask=document.createElement("p");
+  const iconTask=document.createElement("img");
+
+  iconTask.src="images/Union 3.svg";
+
+  var src=document.getElementById('plus-minus');
+  src.appendChild(iconTask);
+  
+
+  
+
+console.log(document.getElementById("desc").value)
+console.log(document.getElementById('deadline').value)
+// console.log("nani")
+const dataArr={
+    taskName: document.getElementById("tname").value,
+    taskDescription: document.getElementById("desc").value,
+    taskDate:document.getElementById('deadline').value,
+};
+
+
+nameTask.innerHTML=dataArr.taskName;
+descTask.innerHTML=dataArr.taskDescription;
+dateTask.innerHTML=dataArr.taskDate;
+
+
+
+const taskHeadings=document.querySelectorAll("#plus-minus");
+
+taskHeadings.forEach(taskHeading=>{
+    taskHeading.addEventListener('click', event=>{
+        taskHeading.classList.toggle('x-rotate');
+        const taskInfo=event.target.parentNode.parentNode.nextElementSibling;
+        const taskHeader=event.target.parentNode.parentNode;
+        if(taskHeading.classList.contains('x-rotate')){
+           
+            taskInfo.style.display='block';
+            taskHeader.style.borderBottomLeftRadius='0px';
+            taskHeader.style.borderBottomRightRadius='0px';
+
+        }
+        else{
+            taskInfo.style.display='none';
+            taskHeader.style.borderBottomLeftRadius='10px';
+            taskHeader.style.borderBottomRightRadius='10px';
+            
+        }
+    });
+});
+
+
+
+
+
+  newDiv.classList.add("task-list");
+  newHeadDiv.classList.add("task-heading");
+  newDescDiv.classList.add("task-info");
+  iconTask.classList.add("plus-minus")
+  accrdContainer.appendChild(newDiv);
+  newDiv.appendChild(newHeadDiv);
+  newDiv.appendChild(newDescDiv);
+  newHeadDiv.appendChild(nameTask);
+  nameTask.appendChild(iconTask);
+  newDescDiv.appendChild(descTask);
+  newDescDiv.appendChild(dateTask);
+  newDescDiv.appendChild(peopleTask);
+}
+
+
+submitBtn.addEventListener("click", AddNew);
+
+
+
+
+
+
+
+//  var clickTracer=0;
+// const taskHeadings=document.querySelectorAll("#task-heading");
+
+// taskHeadings.forEach(taskHeading=>{
+//     taskHeading.addEventListener('click', event=>{
+//         taskHeading.classList.toggle('x-rotate');
+//         const taskInfo=taskHeading.nextElementSibling;
+//         if(taskHeading.classList.contains('active')){
+//             taskInfo.style.display='block';
+//             taskHeadings.style.borderBottomLeftRadius="0px";
+//             taskHeadings.style.borderBottomRightRadius="0px";
+//         }
+//         else{
+//             taskInfo.style.display='none';
+            
+//         }
+//     });
+// });
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// function plusRotate() {
+//     clickTracer++
+
+    
+//     if(clickTracer%2!=0){
+//         document.getElementById('plus-minus').classList.add ('x-rotate');
+//         document.getElementById('task-info').style.display='block';
+        
+//         document.getElementById('task-heading').style.borderBottomLeftRadius="0px";
+//         document.getElementById('task-heading').style.borderBottomRightRadius="0px";
+
+
+
+//     }
+//     else{
+//         document.getElementById('plus-minus').classList.remove ('x-rotate');
+//         document.getElementById('task-info').style.display='none';
+//         document.getElementById('task-heading').style.borderBottomLeftRadius="10px";
+//         document.getElementById('task-heading').style.borderBottomRightRadius="10px";
+//         // document.getElementById("plus-minus").style.animationIterationCount = "++";
+       
+
+
+//     }
+ 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    
+  // Original JavaScript code by Chirp Internet: chirpinternet.eu
+  // Please acknowledge use of this code by including this header.
+
+//   var today = new Date();
+//   var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
+
+//   function setCookie(name, value)
+//   {
+//     document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+//   }
+
+
+//   function storeValues(form)  
+//   {
+//     setCookie("field1", form.field1.value);
+//     setCookie("field2", form.field2.value);
+//     setCookie("field3", form.field3.value);
+//     setCookie("field4", form.field4.value);
+//     return true;
+//   }
+
+//   if(field1 = getCookie("field1")) document.myForm.field1.value = field1;
+//   if(field2 = getCookie("field2")) document.myForm.field2.value = field2;
+//   if(field3 = getCookie("field3")) document.myForm.field3.value = field3;
+//   if(field4 = getCookie("field4")) document.myForm.field4.value = field4;
+
+
+//   var expired = new Date(today.getTime() - 24 * 3600 * 1000); // less 24 hours
+
+// function deleteCookie(name)
+// {
+//   document.cookie=name + "=null; path=/; expires=" + expired.toGMTString();
+// }
+
+
+
+// function clearCookies()
+//   {
+//     deleteCookie("field1");
+//     deleteCookie("field2");
+//     deleteCookie("field3"); 
+//     deleteCookie("field4");
+//     alert('Your cookies have been deleted!');
+//   }
+
+
+
+//================================================================================================================================================================================================================================
+
+
+    </script>
+  </body>
+</html>
